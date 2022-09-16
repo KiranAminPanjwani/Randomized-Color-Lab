@@ -1,3 +1,12 @@
+# <img width="8%" align="left" src="https://user-images.githubusercontent.com/90326051/190830841-9d898e71-1356-4b39-bc6b-09a3ad8e4178.png" > Randomized Color Lab
+
+According to science, viewing colors can help you relaxed. Yes, colors strongly impact our psychological, emotional, and even physical well-being. We all need some form of entertainment to escape our hectic routines. You can use Randomized-Color-Lab as a stress management tool because it will help you change your mood if you are feeling overly stressed. </br> </br>
+This easy-to-navigate color guessing game will help users to play the game and relax their minds. The Randomized Color Lab will also allow the user to discover new colors and copy their favorite color code at the end of the game. Users can access this website at any time from any device.
+
+![image](https://user-images.githubusercontent.com/90326051/190831108-4e4ffaaf-79fa-49f2-8330-559fbb4b98d4.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
