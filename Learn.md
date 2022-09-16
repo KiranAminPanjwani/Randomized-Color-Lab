@@ -1,5 +1,8 @@
 # Learning Through This Project:
-Through this readme, you will learn about one of the hooks provided by React, called useState. Also sometimes called "State Hook". This lets us add native state to React function components.
+
+Random-Color-Lab Project is easy to play and understand color guessing game. I created this website while learning front-end development. In this project, I used all the basic React JS principles (components, properties, and hooks), and color hex codes are stored using the UseState() - Hook concept. I believe this project will help the learners to understand the basic concepts of React and how to implement them. 
+
+👉Through this readme, you will learn about one of the hooks provided by React, called _**useState**_. Also sometimes called "_**State Hook**_". This lets us add native state to React function components.
 
 
 
