@@ -58,4 +58,4 @@ _Now, let's take an example of useState():_
 
 _The component for the initial render looks like this:_
 
-![Component](https://user-images.githubusercontent.com/76689021/193349777-5234352d-8b17-44f5-9d9a-88278efbb397.png)
+<img width="40%" src ="https://user-images.githubusercontent.com/76689021/193349777-5234352d-8b17-44f5-9d9a-88278efbb397.png" />
