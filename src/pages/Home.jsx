@@ -73,7 +73,7 @@ const Home = () => {
                     {/* map is an array function which maps each value */}
                     {hexcode.map((hex, i) => (
                         <div className="row-child">
-                            <div className="square" key={i} style={{ backgroundColor: `${hex}` }} onClick={() => checkColor(hex)}>
+                            <div className="square" key={i} style={{ backgroundColor: `${hex}`,  boxShadow: `2px 2px 7px 7px ${hex}`, margin:"10px"}} onClick={() => checkColor(hex)}>
                                 {/* <p><span id="color-display">{hex === "#7a7877" ? " " : hex}</span></p> */}
                                 <span>{isWin === true ? (<button onClick={() => finalColorDisplay(endColor)} style={{backgroundColor:isWin===true? `${endColor}`:""}}>Copy Color</button>) : " "}</span>
                             </div>
