@@ -42,12 +42,20 @@ _For example:_
 **<h3>What does useEffect() in React do?</h3>** **useEffect()** React that your component needs to do something after render. React will remember the function you pass inside the useEffect() and call it later after performing the DOM updates. To use the <ins>useState</ins> Hook, we first need to <ins>import</ins> it at the top of our component.
 _Like this:_
 
+![importing useEffect()](https://user-images.githubusercontent.com/76689021/193349567-441cc2d7-3d21-444a-a125-4a3d62d78e89.png)
+
 _Now, let's take an example of useState():_
 
+![syntax of useEffect()](https://user-images.githubusercontent.com/76689021/193349652-d19e03bf-4090-4106-9b9a-2923c894cb68.png)
+
 **<h3>What does calling useState() do in our Project?</h3>** It performs a function whenever the page / component is rendered. This function is referred to as in React as an "effect". Here, we **useEffect** is being used to set states - **isWin** and **hexcode** for the initial render of the component.
+
+![code_snippet](https://user-images.githubusercontent.com/76689021/193349736-e67e285a-22cd-46b6-8c60-b8a14ef5d640.png)
 
 - _**Line 15:**_ Sets the **isWin** state to empty string.
 - _**Line 16:**_ Sets the hexcode array to an empty array.
 - _**Line 17:**_ Performs a loop 6 times in order to set all the values in the hexcode array to grey color.
 
 _The component for the initial render looks like this:_
+
+![Component](https://user-images.githubusercontent.com/76689021/193349777-5234352d-8b17-44f5-9d9a-88278efbb397.png)
