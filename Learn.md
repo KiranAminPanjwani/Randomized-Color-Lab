@@ -2,7 +2,7 @@
 
 Random-Color-Lab Project is easy to play and understand color guessing game. I created this website while learning front-end development. In this project, I used all the basic React JS principles (components, properties, and hooks), and color hex codes are stored using the useState() and all the colors are set to grey for the initial render using useEffect() - Hook concept. I believe this project will help the learners to understand the basic concepts of React and how to implement them.
 
-👉Through this readme, you will learn about two of the hooks provided by React, called _**useState**_ and _**useEffect**_. **useState()** sometimes called "_**State Hook**_" lets us add native state to React function components. **useEffect()** is used to direct the component to perform an action as it renders.
+👉Through this readme, you will learn about two of the hooks provided by React, called _**useState**_ and _**useEffect**_. **useState()** sometimes called "_**State Hook**_" lets us add native state to React function components. **useEffect()** sometimes called "_**Effect Hook**_" is used to direct the component to perform an action as it renders.
 
 **<h3>What is a Hook?</h3>** A Hook is a special function that lets you “hook into” React features. For example, useState is a Hook that lets you add React state to function components.
 
