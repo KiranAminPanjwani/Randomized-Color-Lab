@@ -46,3 +46,22 @@ _For example:_
 
 
 
+**<h3>What is is useEffect() in React?</h3>** The **useEffect()** is a hook  that allows you to run side effects (for example fetching external data from an API).
+
+
+The structure of useeffect looks like this
+
+```jsx
+
+useEffect(() => {
+    //the code you want to run in the side effect
+  return () => {
+    //cleanup code
+  }
+}, [/*Deps array, what you want to trigger the side effect*/])
+
+```
+
+However, you might not need a `useeffect()`, to learn more please read this [article](https://beta.reactjs.org/learn/you-might-not-need-an-effect)
+
+
