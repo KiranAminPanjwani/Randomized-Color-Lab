@@ -55,8 +55,53 @@ button {
 
 @media (max-width: 530px) {
   .square {
+
+    width: 140px;
+    height: 140px;
+    border-radius: 20%;
+    border: 3px solid white;
+    background-color: #7a7877;
+    margin: 1.66%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column !important;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+  }
+  
+  @media (max-width: 530px) {
+    .square {
+      width: 25vw;
+      height: 15vh;
+    }
+  }
+  
+  .square p {
+    font-size: 50%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .square button {
+    height: max-content;
+    background-color: rgba(255, 255, 255, 0.333);
+    color: white;
+    font-size: 80%;
+    padding: 6px 8%;
+    border: none;
+    border-radius: 13px;
+    box-shadow: 1px 4px 1px 0px rgba(82, 82, 82, 0.37);
+    user-select: none;
+
     width: 25vw;
     height: 15vh;
+
   }
 }
 
