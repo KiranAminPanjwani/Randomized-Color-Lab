@@ -59,3 +59,15 @@ _Now, let's take an example of useEffect():_
 _The component for the initial render looks like this:_
 
 <img width="40%" src ="https://user-images.githubusercontent.com/76689021/193349777-5234352d-8b17-44f5-9d9a-88278efbb397.png" />
+
+**<h2>Other technologies used in this project</h2>**
+
+**<h3>Prettier?</h3>**
+[Prettier](https://prettier.io/docs/en/index.html) is an open source, opinionated, code formatter which can be used to format all of your files so that they all follow the same coding style.
+
+This helps when working on large project with multiple contributors to ensure that everyone follows the same same formatting standard
+
+**<h3>Husky/Pre-commit hooks</h3>**
+A pre-commit hook is a script that is run before the `git commit` command is run to perform certain checks within the code you'd be commiting (such as code formatting).
+
+The pre-commit hook provider we use here is [Husky](https://github.com/typicode/husky)
