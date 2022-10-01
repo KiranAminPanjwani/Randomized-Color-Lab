@@ -29,13 +29,17 @@ button {
   margin-bottom: 15px;
 }
 
+#headline{
+  padding:5px 0px;
+}
+
 /* ---------------------
   For all squares
   --------------------- */
 
 .square {
-  width: 140px;
-  height: 140px;
+  width: 135px;
+  height: 135px;
   border-radius: 20%;
   border: 3px solid white;
   background-color: #7a7877;
@@ -173,6 +177,10 @@ h1 {
   letter-spacing: 1px;
 }
 
+.infoText{
+  margin: 10px 0px;
+}
+
 .clickText {
   animation: shake 1s ease-in;
 }
@@ -291,8 +299,8 @@ h1 {
 }
 
 .footer {
-  margin-top: 0.5rem;
-  padding: 1rem;
+  /* margin-top: 0.5rem; */
+  /* padding: 1rem; */
   background-color: rgb(50, 54, 61);
   position: fixed;
   text-align: center;
