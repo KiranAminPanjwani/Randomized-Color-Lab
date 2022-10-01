@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./Home.css";
 
 const Home = () => {
@@ -9,19 +9,24 @@ const Home = () => {
   const [isWin, setIsWin] = useState(null);
   const [endColor, setendColor] = useState("");
 
-  const create_new_hex_array = () => {
+  const resetRandomised = useCallback(() => {
     const newArray = new Array(numberOfColors);
     for (let idx = 0; idx < hexcode.length; idx++) {
       newArray[idx] = `#${Math.floor(Math.random() * 16777000).toString(16)}`;
     }
     setHexcode(newArray);
-  };
-
-  const resetRandomised = () => {
-    create_new_hex_array();
     setnum(Math.floor(Math.random() * 6));
     setIsWin(null);
-  };
+  }, [hexcode.length]);
+
+  useEffect(() => {
+    const listener = window.addEventListener("keydown", (e) => {
+      if(e.key === " ") resetRandomised()
+    })
+    return () => {
+      window.removeEventListener("keydown", listener)
+    }
+  }, [ resetRandomised ])
 
   const resetGame = () => {
     setIsWin(null);
@@ -50,7 +55,7 @@ const Home = () => {
       <h1 id="headline">
         <p className="clickText">
           {isWin == null
-            ? "Click the button below & "
+            ? "Click the button below OR Press <Spacebar> & "
             : isWin
             ? "You Win"
             : "You lose"}
