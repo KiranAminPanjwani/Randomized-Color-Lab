@@ -76,7 +76,7 @@ const Home = () => {
         <div className="row">
           {/* map is an array function which maps each value */}
           {hexcode.map((hex, i) => (
-            <div className="row-child" key={`${hex}-${i}`}>
+            <div className="row-child" key={i}>
               <div
                 className="square"
                 style={{ backgroundColor: `${hex}` }}
