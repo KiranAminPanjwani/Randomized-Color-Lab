@@ -60,10 +60,21 @@ const Home = () => {
         navigator.clipboard.writeText(endColor);        
     }
 
+    const colorToGuess=(hex)=>{
+        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        let rgb = result ? {
+          r: parseInt(result[1], 16),
+          g: parseInt(result[2], 16),
+          b: parseInt(result[3], 16)
+        } : null;
+        if (!rgb) return 'Given';
+        return `${Math.round(rgb.r/255*100)}% red, ${Math.round(rgb.g/255*100)}% green, and ${Math.round(rgb.b/255*100)}% blue`;
+    }
+
     return (
         <div className="home">
 
-            <h1 id="headline"><p className="clickText">{isWin === "" ? "Click the button below & " : (isWin ? "You Win" : "You lose")}</p>Generate New <span id="rgbdisplay">{hexcode[num] !== "#7a7877" ? hexcode[num] : "Hex"}</span> Colors</h1>
+            <h1 id="headline"><p className="clickText">{isWin === "" ? "Click the button below & " : (isWin ? "You Win" : "You lose")}</p>Select the <span id="rgbdisplay">{hexcode[num] !== "#7a7877" ? colorToGuess(hexcode[num]) : "Given"}</span> Color</h1>
             <div id="stripe">
                 <button id="btn1" onClick={randomized_ColorCode}><img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-click-call-to-action-bearicons-glyph-bearicons.png" alt="clickme" id="clickimg" />Random Color</button>
                 <p id="endbutton" onClick={() => resetColors()}>{isWin === true ? (<button id="endbtn">end game?</button>) : ""}</p>
