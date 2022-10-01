@@ -85,6 +85,7 @@ const Home = () => {
                 <span>
                   {isWin && (
                     <button
+                      className="btn"
                       onClick={() => copyColorToClipboard(endColor)}
                       style={{
                         backgroundColor: isWin === true ? `${endColor}` : "",
