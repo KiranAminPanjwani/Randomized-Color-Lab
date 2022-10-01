@@ -71,6 +71,7 @@
     border: none;
     border-radius: 13px;
     box-shadow: 1px 4px 1px 0px rgba(82, 82, 82, 0.37);
+    user-select: none;
   }
   .square button:focus {
     background-color: rgba(60, 59, 59, 0.544);
