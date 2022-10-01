@@ -45,10 +45,15 @@ button {
     text-align: center;
     align-items: center;
     flex-direction: column !important;
-    transition: background 0.5s;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
+    transition: background 0.5s, box-shadow 0.5s;
+    -webkit-transition: background 0.5s, box-shadow 0.5s;
+    -moz-transition: background 0.5s, box-shadow 0.5s;
+    -o-transition: background 0.5s, box-shadow 0.5s;
+  }
+  .square:hover {
+    box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
+          inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
+          inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
   }
   
   @media (max-width: 530px) {
