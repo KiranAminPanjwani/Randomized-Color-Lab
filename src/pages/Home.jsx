@@ -52,12 +52,11 @@ const Home = () => {
           {isWin == null
             ? "Click the button below & "
             : isWin
-            ? "You Win"
-            : "You lose"}
+              ? "You Win"
+              : "You lose"}
         </p>
-        <p>{`Generate NEW ${
-          hexcode[num] !== "#7a7877" ? hexcode[num] : "Hex"
-        } Colors`}</p>
+        <p>{`Generate NEW ${hexcode[num] !== "#7a7877" ? hexcode[num] : "Hex"
+          } Colors`}</p>
       </h1>
       <div id="stripe">
         <button id="btn1" onClick={() => resetRandomised()}>
@@ -84,12 +83,11 @@ const Home = () => {
               >
                 <span>
                   {isWin && (
-                    <button
+                    <button className="btn"
                       onClick={() => copyColorToClipboard(endColor)}
                       style={{
                         backgroundColor: isWin === true ? `${endColor}` : "",
-                      }}
-                    >
+                      }}>
                       Copy Color
                     </button>
                   )}
@@ -99,7 +97,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
