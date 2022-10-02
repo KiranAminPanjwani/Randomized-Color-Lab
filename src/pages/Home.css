@@ -13,6 +13,7 @@ button {
   justify-content: center;
   max-width: 800px;
   margin: auto;
+  position: relative;
 }
 
 .row {
@@ -182,7 +183,8 @@ h1 {
 }
 
 .help-icon {
-  margin-left: 0.25em;
+  margin-left: 1em;
+  color: #7a7877;
 }
 
 .help-icon:hover,
@@ -250,34 +252,64 @@ h1 {
   For Buttons
   --------------------- */
 
-#stripe {
-  background: white;
-  height: 30px;
+#button-container {
   text-align: center;
-  color: black;
+  position: absolute;
+  translate: 100% 300%;
 }
 
 #btn1 {
-  height: 100%;
+  height: 3.3rem;
+  width: fit-content;
+  font-size: 1rem;
   font-weight: 600 !important;
-  text-decoration: underline;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  display: flex;
 }
+#btn1:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 15px 1px rgb(191, 186, 186);
+}
+
 #endbtn {
   font-weight: 200 !important;
   font-size: small;
-  text-decoration: underline;
   color: white !important;
   background-color: transparent !important;
+  width: 7rem;
+  height: 3rem;
+  border: 3px solid white;
+  border-radius: 1rem;
+  position: absolute;
+  translate: 150% -140%;
 }
 #endbtn:hover {
   font-size: bolder;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
-#stripe button {
+@media (max-width: 800px) {
+  #button-container {
+    translate: 22vw 300%;
+  }
+}
+@media (max-width: 530px) {
+  #button-container {
+    translate: 18vw 300%;
+  }
+  #btn1 {
+    scale: 0.85;
+  }
+  #endbtn {
+    scale: 0.85;
+    translate: 22vw -140%;
+  }
+}
+
+/* #stripe button {
   outline: none;
   border: none;
-  /* text-decoration: underline ; */
   color: black;
   font-family: "Raleway", Sans-serif;
   text-transform: capitalize;
@@ -292,19 +324,11 @@ h1 {
   align-items: center;
   text-align: center;
   justify-content: center;
-}
+} */
 #clickimg {
   width: 20px;
   text-align: center;
-  margin-right: 3px;
-}
-
-#btn1:hover {
-  background-color: transparent;
-  color: black;
-  font-size: bolder;
-  letter-spacing: 2px;
-  box-shadow: 0px 0px 10px 0px white;
+  margin-right: 0.5em;
 }
 
 .footer {
@@ -313,7 +337,7 @@ h1 {
   background-color: rgb(50, 54, 61);
   position: fixed;
   text-align: center;
-  color: rgb(85, 85, 85);
+  color: rgb(143, 139, 139);
   bottom: 0;
   left: 0;
   width: 100%;

@@ -75,23 +75,7 @@ const Home = () => {
           hexcode[num] !== "#7a7877" ? hexcode[num] : "Hex"
         } Colors`}</p>
       </h1>
-      <div id="stripe">
-        <button id="btn1" onClick={() => resetRandomised()}>
-          <img
-            src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-click-call-to-action-bearicons-glyph-bearicons.png"
-            alt="clickme"
-            id="clickimg"
-          />
-          Random Color
-          <FaInfo
-            className="help-icon"
-            title="Click the color that matches the hex code."
-          />
-        </button>
-        <p id="endbutton" onClick={() => resetGame()}>
-          {isWin && <button id="endbtn">end game?</button>}
-        </p>
-      </div>
+
       <div id="container">
         <div className="row">
           {/* map is an array function which maps each value */}
@@ -119,7 +103,27 @@ const Home = () => {
             </div>
           ))}
         </div>
+
+        {/* button */}
+        <div id="button-container">
+          <button id="btn1" onClick={() => resetRandomised()}>
+            <img
+              src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-click-call-to-action-bearicons-glyph-bearicons.png"
+              alt="clickme"
+              id="clickimg"
+            />
+            Random Color
+            <FaInfo
+              className="help-icon"
+              title="Click the color that matches the hex code."
+            />
+          </button>
+          <p id="endbutton" onClick={() => resetGame()}>
+            {isWin && <button id="endbtn">end game?</button>}
+          </p>
+        </div>
       </div>
+
       <ToastContainer autoClose={800} hideProgressBar={true} />
     </div>
   );
