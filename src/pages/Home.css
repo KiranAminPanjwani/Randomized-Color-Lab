@@ -29,8 +29,8 @@ button {
   margin-bottom: 15px;
 }
 
-#headline{
-  padding:5px 0px;
+#headline {
+  padding: 5px 0px;
 }
 
 /* ---------------------
@@ -75,8 +75,8 @@ button {
   }
   .square:hover {
     box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
-          inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
-          inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
+      inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
+      inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
   }
 
   @media (max-width: 530px) {
@@ -177,8 +177,17 @@ h1 {
   letter-spacing: 1px;
 }
 
-.infoText{
+.infoText {
   margin: 10px 0px;
+}
+
+.help-icon {
+  margin-left: 0.25em;
+}
+
+.help-icon:hover,
+.help-icon:focus {
+  filter: drop-shadow(3px 3px 2px rgba(245, 127, 127, 0.888));
 }
 
 .clickText {

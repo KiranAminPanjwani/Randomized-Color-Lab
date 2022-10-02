@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import "./Home.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaInfo } from "react-icons/fa";
 
 const Home = () => {
   const numberOfColors = 6;
@@ -82,6 +83,10 @@ const Home = () => {
             id="clickimg"
           />
           Random Color
+          <FaInfo
+            className="help-icon"
+            title="Click the color that matches the hex code."
+          />
         </button>
         <p id="endbutton" onClick={() => resetGame()}>
           {isWin && <button id="endbtn">end game?</button>}
