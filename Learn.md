@@ -83,3 +83,15 @@ _Now, let's take an example of useCallback():_
 
 -   `const resetRandomised = useCallback(() => { ...` - This is the function that is being memoized.
 -   `... }, [hexcode.length]);` - This is the dependency array. The function will only change if the length of the hexcode array changes.
+
+**<h2>Other technologies used in this project</h2>**
+
+**<h3>Prettier?</h3>**
+[Prettier](https://prettier.io/docs/en/index.html) is an open source, opinionated, code formatter which can be used to format all of your files so that they all follow the same coding style.
+
+This helps when working on large project with multiple contributors to ensure that everyone follows the same same formatting standard
+
+**<h3>Husky/Pre-commit hooks</h3>**
+A pre-commit hook is a script that is run before the `git commit` command is run to perform certain checks within the code you'd be commiting (such as code formatting).
+
+The pre-commit hook provider we use here is [Husky](https://github.com/typicode/husky)
