@@ -1,6 +1,6 @@
 # <img width="8%" align="left" src="https://user-images.githubusercontent.com/90326051/190830841-9d898e71-1356-4b39-bc6b-09a3ad8e4178.png" > Randomized Color Lab
 
-According to science, viewing colors can help you relaxed. Yes, colors strongly impact our psychological, emotional, and even physical well-being. We all need some form of entertainment to escape our hectic routines. You can use Randomized-Color-Lab as a stress management tool because it will help you change your mood if you are feeling overly stressed. </br> </br>
+According to science, viewing colors can help you relax. Yes, colors strongly impact our psychological, emotional, and even physical well-being. We all need some form of entertainment to escape our hectic routines. You can use Randomized-Color-Lab as a stress management tool because it will help you change your mood if you are feeling overly stressed. </br> </br>
 This easy-to-navigate color guessing game will help users to play the game and relax their minds. The Randomized Color Lab will also allow the user to discover new colors and copy their favorite color code at the end of the game. Users can access this website at any time from any device.
 
 Visit the website: [Randomized Color Lab](https://colors-lab.netlify.app/)
@@ -18,10 +18,10 @@ Visit the website: [Randomized Color Lab](https://colors-lab.netlify.app/)
 #
 <h3> 📌 Contribution Guidelines 🏗 </h3>
 
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
-To start contributing, follow the below guidelines: 
+Are we missing any of your favorite features, would you like to include  them❓ We invite you to contribute to this project and make it better. 
+To start contributing, follow these guidelines: 
 
-**1.**  Fork [this](https://github.com/KiranAminPanjwani/Randomized-Color-Lab) repository.
+**1.**  Fork [this](https://github.com/KiranAminPanjwani/Randomized-Color-Lab/fork) repository.
 
 **2.**  Clone your forked copy of the project.
 
@@ -92,9 +92,9 @@ To maintain a safe and inclusive space for everyone to learn and grow, contribut
 
 If you have any feedback or suggestions please reach out to me.  
 
-In order to make a hassle-free environment, I implore you all (while contributing) to follow the instructions [Contributing Guidelines](https://github.com/KiranAminPanjwani/Randomized-Color-Lab/blob/main/Contributing_Guidlines.md)!
+In order to make a hassle-free environment, I implore you all (while contributing) to follow the instructions specified here [Contributing Guidelines](https://github.com/KiranAminPanjwani/Randomized-Color-Lab/blob/main/Contributing_Guidlines.md)!
 
-You can create a <a href="https://github.com/KiranAminPanjwani/Randomized-Color-Lab/issues">issue</a> and mention there , which new features or extension can make this Project more good.
+You can create an <a href="https://github.com/KiranAminPanjwani/Randomized-Color-Lab/issues">issue</a> and mention there , which new features or extension can improve this Project. Thank you
 
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
