@@ -26,7 +26,7 @@ To start contributing, follow the below guidelines:
 **2.**  Clone your forked copy of the project.
 
 ```bash
-   git clone https://github.com/KiranAminPanjwani/Randomized-Color-Lab.git
+   git clone https://github.com/<your_github_user_name>/Randomized-Color-Lab.git
 ```
 
 **3.** Navigate to the project directory.
@@ -39,12 +39,13 @@ To start contributing, follow the below guidelines:
    git checkout -b YourBranchName
 ```
 
-**5.** Make changes in source code.
-
-**6.** Stage your changes and commit
-
+**5.** Make changes in source code and stage.
 ```
    git add .
+```
+
+**6.** Stage your changes and commit
+```
    git commit -m "<your_commit_message>"
 ```
 
@@ -115,6 +116,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs all the packages and libraries used in the project.
 
 ### `npm start`
 
