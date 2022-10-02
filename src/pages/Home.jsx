@@ -1,5 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import "./Home.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
   const numberOfColors = 6;
@@ -8,6 +10,7 @@ const Home = () => {
   const [num, setnum] = useState(0);
   const [isWin, setIsWin] = useState(null);
   const [endColor, setendColor] = useState("");
+  const [isToastDisplayed, setIsToastDisplayed] = useState(false);
 
   const resetRandomised = useCallback(() => {
     const newArray = new Array(numberOfColors);
@@ -15,18 +18,19 @@ const Home = () => {
       newArray[idx] = `#${Math.floor(Math.random() * 16777000).toString(16)}`;
     }
     setHexcode(newArray);
+    setIsToastDisplayed(true);
     setnum(Math.floor(Math.random() * 6));
     setIsWin(null);
   }, [hexcode.length]);
 
   useEffect(() => {
     const listener = window.addEventListener("keydown", (e) => {
-      if(e.key === " ") resetRandomised()
-    })
+      if (e.key === " ") resetRandomised();
+    });
     return () => {
-      window.removeEventListener("keydown", listener)
-    }
-  }, [ resetRandomised ])
+      window.removeEventListener("keydown", listener);
+    };
+  }, [resetRandomised]);
 
   const resetGame = () => {
     setIsWin(null);
@@ -40,9 +44,15 @@ const Home = () => {
 
       setendColor(hex);
       setIsWin(true);
+
+      if (isToastDisplayed) {
+        setIsToastDisplayed(false);
+        toast("You win");
+      }
       setHexcode(filledArray);
     } else {
       setIsWin(false);
+      toast("You Loose ");
     }
   };
 
@@ -105,6 +115,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <ToastContainer autoClose={800} hideProgressBar={true} />
     </div>
   );
 };
