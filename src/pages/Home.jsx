@@ -60,7 +60,7 @@ const Home = () => {
             ? "You Win"
             : "You lose"}
         </p>
-        <p>{`Generate NEW ${
+        <p className="infoText">{`Generate NEW ${
           hexcode[num] !== "#7a7877" ? hexcode[num] : "Hex"
         } Colors`}</p>
       </h1>

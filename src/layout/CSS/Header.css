@@ -7,7 +7,7 @@
     height: max-content;
     box-sizing: border-box;
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
 }
 
 .navheader {
@@ -18,7 +18,7 @@
     width: 100%;
     height: max-content;
     background: radial-gradient(#b1aead85,#6b716f7a);
-    padding: 10px 6px;
+    padding: 6px 6px;
     justify-content: center;
 }
 

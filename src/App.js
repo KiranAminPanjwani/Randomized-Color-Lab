@@ -11,7 +11,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
       </Routes>
     </Layout>
-    <Footer></Footer>
+    <Footer/>
     </div>
   );
 }
