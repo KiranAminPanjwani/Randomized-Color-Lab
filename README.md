@@ -10,9 +10,14 @@ Visit the website: [Randomized Color Lab](https://colors-lab.netlify.app/)
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
 
 #
-<h3> 📌 Snapshot of the Website:</h3>
+<h3> 📌 Snapshot of the Website Before Contributions:</h3>
 
 ![image](https://user-images.githubusercontent.com/90326051/190831108-4e4ffaaf-79fa-49f2-8330-559fbb4b98d4.png)
+
+<h3> 📌 Snapshot of the Website After Contributions:</h3>
+
+![image](https://user-images.githubusercontent.com/90326051/193469930-e85ff1b4-5659-40b6-b93a-5fe14b0aa09e.png)
+
 
 
 #
@@ -187,6 +192,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 #
+
+<h1 align=center> OUR VALUABLE CONTRIBUTORS✨ </h1>
+<p align="center">
+  
+	
+<a href="https://github.com/KiranAminPanjwani/Randomized-Color-Lab/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=KiranAminPanjwani/Randomized-Color-Lab" />
+</a>
+</p>
+
+#
+	
 	
 
 <h3 align=center> Project Admin ❤️ </h3>
