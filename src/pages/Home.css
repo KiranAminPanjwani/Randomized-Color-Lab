@@ -71,8 +71,8 @@ button {
   }
   .square:hover {
     box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
-          inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
-          inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
+      inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
+      inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
   }
 
   @media (max-width: 530px) {
@@ -292,7 +292,6 @@ h1 {
 
 .footer {
   margin-top: 0.5rem;
-  padding: 1rem;
   background-color: rgb(50, 54, 61);
   position: fixed;
   text-align: center;
