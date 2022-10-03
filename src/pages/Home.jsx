@@ -77,33 +77,6 @@ const Home = () => {
       </h1>
 
       <div id="container">
-        <div className="row">
-          {/* map is an array function which maps each value */}
-          {hexcode.map((hex, i) => (
-            <div className="row-child" key={i}>
-              <div
-                className="square"
-                style={{ backgroundColor: `${hex}` }}
-                onClick={() => checkColor(hex)}
-              >
-                <span>
-                  {isWin && (
-                    <button
-                      className="btn"
-                      onClick={() => copyColorToClipboard(endColor)}
-                      style={{
-                        backgroundColor: isWin === true ? `${endColor}` : "",
-                      }}
-                    >
-                      Copy Color
-                    </button>
-                  )}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-
         {/* button */}
         <div id="button-container">
           <button id="btn1" onClick={() => resetRandomised()}>
@@ -122,6 +95,33 @@ const Home = () => {
             {isWin && <button id="endbtn">end game?</button>}
           </p>
         </div>
+      </div>
+
+      <div className="row">
+        {/* map is an array function which maps each value */}
+        {hexcode.map((hex, i) => (
+          <div className="row-child" key={i}>
+            <div
+              className="square"
+              style={{ backgroundColor: `${hex}` }}
+              onClick={() => checkColor(hex)}
+            >
+              <span>
+                {isWin && (
+                  <button
+                    className="btn"
+                    onClick={() => copyColorToClipboard(endColor)}
+                    style={{
+                      backgroundColor: isWin === true ? `${endColor}` : "",
+                    }}
+                  >
+                    Copy Color
+                  </button>
+                )}
+              </span>
+            </div>
+          </div>
+        ))}
       </div>
 
       <ToastContainer autoClose={800} hideProgressBar={true} />

@@ -4,7 +4,8 @@ button {
 
 .home {
   background-color: #252627;
-  height: 60vh;
+  /* background-color: red; */
+  height: 6rem;
 }
 #container {
   display: flex;
@@ -255,7 +256,8 @@ h1 {
 #button-container {
   text-align: center;
   position: absolute;
-  translate: 100% 300%;
+  translate: 100% 10%;
+  margin: 10vw 0;
 }
 
 #btn1 {
@@ -291,12 +293,13 @@ h1 {
 
 @media (max-width: 800px) {
   #button-container {
-    translate: 22vw 300%;
+    translate: 21vw 20%;
+    scale: 0.9;
   }
 }
 @media (max-width: 530px) {
   #button-container {
-    translate: 18vw 300%;
+    translate: 16.5vw 20%;
   }
   #btn1 {
     scale: 0.85;
