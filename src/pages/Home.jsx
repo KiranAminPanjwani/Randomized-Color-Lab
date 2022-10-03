@@ -92,38 +92,37 @@ const Home = () => {
             />
           </button>
           <p id="endbutton" onClick={() => resetGame()}>
-            {isWin && <button id="endbtn">end game?</button>}
+            {isWin && <button id="endbtn">End Game?</button>}
           </p>
         </div>
-      </div>
 
-      <div className="row">
-        {/* map is an array function which maps each value */}
-        {hexcode.map((hex, i) => (
-          <div className="row-child" key={i}>
-            <div
-              className="square"
-              style={{ backgroundColor: `${hex}` }}
-              onClick={() => checkColor(hex)}
-            >
-              <span>
-                {isWin && (
-                  <button
-                    className="btn"
-                    onClick={() => copyColorToClipboard(endColor)}
-                    style={{
-                      backgroundColor: isWin === true ? `${endColor}` : "",
-                    }}
-                  >
-                    Copy Color
-                  </button>
-                )}
-              </span>
+        <div className="row">
+          {/* map is an array function which maps each value */}
+          {hexcode.map((hex, i) => (
+            <div className="row-child" key={i}>
+              <div
+                className="square"
+                style={{ backgroundColor: `${hex}` }}
+                onClick={() => checkColor(hex)}
+              >
+                <span>
+                  {isWin && (
+                    <button
+                      className="btn"
+                      onClick={() => copyColorToClipboard(endColor)}
+                      style={{
+                        backgroundColor: isWin === true ? `${endColor}` : "",
+                      }}
+                    >
+                      Copy Color
+                    </button>
+                  )}
+                </span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-
       <ToastContainer autoClose={800} hideProgressBar={true} />
     </div>
   );

@@ -4,8 +4,7 @@ button {
 
 .home {
   background-color: #252627;
-  /* background-color: red; */
-  height: 6rem;
+  height: 70vh;
 }
 #container {
   display: flex;
@@ -55,7 +54,7 @@ button {
   -webkit-transition: background 0.5s;
   -moz-transition: background 0.5s;
   -o-transition: background 0.5s;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 530px) {
@@ -256,9 +255,10 @@ h1 {
 
 #button-container {
   text-align: center;
+  margin: 3rem 0;
   position: absolute;
-  translate: 100% 10%;
-  margin: 10vw 0;
+  left: 0;
+  top: -2rem;
 }
 
 #btn1 {
@@ -269,6 +269,7 @@ h1 {
   border-radius: 1rem;
   padding: 1rem 0.5rem;
   display: flex;
+  translate: 160%;
 }
 #btn1:hover {
   scale: 1.05;
@@ -285,32 +286,49 @@ h1 {
   border: 3px solid white;
   border-radius: 1rem;
   position: absolute;
-  translate: 150% -140%;
+  translate: 400% -140%;
 }
 #endbtn:hover {
   font-size: bolder;
   letter-spacing: 1.5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 825px) {
   #button-container {
-    translate: 21vw 20%;
+    translate: -5vw 10%;
     scale: 0.9;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 630px) {
   #button-container {
-    translate: 16.5vw 20%;
-  }
-  #btn1 {
+    translate: -25vw 20%;
     scale: 0.85;
   }
   #endbtn {
     scale: 0.85;
-    translate: 22vw -140%;
+    translate: 375% -140%;
   }
 }
-
+@media (max-width: 490px) {
+  #button-container {
+    translate: -40vw 50%;
+    scale: 0.75;
+  }
+  #endbtn {
+    scale: 0.85;
+    translate: 375% -140%;
+  }
+}
+@media (max-width: 394px) {
+  #button-container {
+    translate: -40vw 50%;
+    scale: 0.7;
+  }
+  #endbtn {
+    scale: 0.85;
+    /* translate: 22vw -140%; */
+  }
+}
 /* #stripe button {
   outline: none;
   border: none;
@@ -339,12 +357,13 @@ h1 {
   /* margin-top: 0.5rem; */
   /* padding: 1rem; */
   background-color: rgb(50, 54, 61);
-  position: fixed;
+  position: absolute;
+  bottom: 0;
   text-align: center;
   color: rgb(143, 139, 139);
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 /* Copy color button styling */
