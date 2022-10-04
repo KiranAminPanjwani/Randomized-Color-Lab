@@ -53,7 +53,21 @@ button {
   -webkit-transition: background 0.5s;
   -moz-transition: background 0.5s;
   -o-transition: background 0.5s;
-  cursor:pointer;
+  cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  .square {
+    transition: background 0.5s, box-shadow 0.5s;
+    -webkit-transition: background 0.5s, box-shadow 0.5s;
+    -moz-transition: background 0.5s, box-shadow 0.5s;
+    -o-transition: background 0.5s, box-shadow 0.5s;
+  }
+  .square:hover {
+    box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
+      inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
+      inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
+  }
 }
 
 @media (max-width: 530px) {
@@ -69,15 +83,6 @@ button {
     text-align: center;
     align-items: center;
     flex-direction: column !important;
-    transition: background 0.5s, box-shadow 0.5s;
-    -webkit-transition: background 0.5s, box-shadow 0.5s;
-    -moz-transition: background 0.5s, box-shadow 0.5s;
-    -o-transition: background 0.5s, box-shadow 0.5s;
-  }
-  .square:hover {
-    box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
-      inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
-      inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
   }
 
   @media (max-width: 530px) {
@@ -325,8 +330,4 @@ h1 {
 .btn:focus {
   cursor: pointer;
   outline: none;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transform: translateY(-0.25em);
 }
