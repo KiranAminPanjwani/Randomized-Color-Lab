@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -7,10 +8,10 @@ const Header = () => {
             <nav className="navheader mt-2">
 
                 <div className="col-md-9 navHeading">
-                <div className="col-md-3 navLogo">
-                    <img src="./images/colorGuessing_Logo.png" alt="ColorGuessing" />
-                </div>
-                    Randomized Color Lab
+                    <div className="col-md-3 navLogo">
+                        <Link to="/"><img src="./images/colorGuessing_Logo.png" alt="ColorGuessing" /></Link>
+                    </div>
+                    <Link to="/">Randomized Color Lab</Link>
                 </div>
             </nav>
         </div>
