@@ -3,6 +3,7 @@ import "./Home.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaInfo } from "react-icons/fa";
+//import {GitHubIcon} from '@mui/icons-material';
 
 const Home = () => {
   const numberOfColors = 6;
