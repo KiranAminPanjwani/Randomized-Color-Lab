@@ -1,3 +1,8 @@
+:root {
+  --focus-color: rgba(10, 10, 10, 0.26);
+  --active-color: rgb(121, 116, 116);
+}
+
 button {
   cursor: pointer;
 }
@@ -49,14 +54,22 @@ button {
   text-align: center;
   align-items: center;
   flex-direction: column !important;
-  transition: background 0.5s;
-  -webkit-transition: background 0.5s;
-  -moz-transition: background 0.5s`;
-  -o-transition: background 0.5s;
+  transition: box-shadow 0.2s;
   cursor: pointer;
 }
 
+/* Laptop screen sizes and above */
+@media (min-width: 769px) {
+  .square:hover {
+      box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
+        inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
+        inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+/* Mobile screen sizes ranging from 530px width and below*/
 @media (max-width: 530px) {
+  
   .square {
     width: 140px;
     height: 140px;
@@ -69,23 +82,21 @@ button {
     text-align: center;
     align-items: center;
     flex-direction: column !important;
-    transition: background 0.5s, box-shadow 0.5s;
-    -webkit-transition: background 0.5s, box-shadow 0.5s;
-    -moz-transition: background 0.5s, box-shadow 0.5s;
-    -o-transition: background 0.5s, box-shadow 0.5s;
-  }
-  .square:hover {
-    box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
-      inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
-      inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
+    background-position: center;
+    transition: background 0.2s;
+
   }
 
-  @media (max-width: 530px) {
-    .square {
-      width: 25vw;
-      height: 15vh;
-    }
-  }
+    .square:hover {
+        background: var(--focus-color) radial-gradient(circle, transparent 1%, var(--focus-color) 1%) center/15000%;
+        
+      }
+      
+      .square:active {
+        background-color: var(--active-color);
+        background-size: 100%;
+        transition: background 0s;
+      }
 
   .square p {
     font-size: 50%;
