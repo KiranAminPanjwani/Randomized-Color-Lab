@@ -3,7 +3,20 @@ import "./Home.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaInfo } from "react-icons/fa";
+import { useRef } from "react";
 
+function Animation({text,color}) {
+  const [value,setText] = useState(''); 
+  const index = useRef(0);
+  useEffect(()=>{
+    setTimeout(()=>{
+         setText((value) => value + text.charAt(index.current));
+         index.current += 1;
+         console.log(index.current);
+    },500);
+  },[text,value,index]);
+  return <p style={{color: color, borderBottom: `2px solid ${color}`, fontWeight: 'bold'}}>{value}</p>;
+};
 
 const Home = () => {
   const numberOfColors = 6;
@@ -69,8 +82,9 @@ const Home = () => {
           {isWin == null
             ? "Click the button below OR Press <Spacebar> & "
             : isWin
-            ? "You Win"
-            : "You lose"}
+            ? <Animation text="Yoou Win" color="green"/> 
+            : <Animation text="Yoou lose" color="red" />
+           }
         </p>
         <p className="infoText">{`Generate NEW ${
           hexcode[num] !== "#7a7877" ? hexcode[num] : "Hex"
