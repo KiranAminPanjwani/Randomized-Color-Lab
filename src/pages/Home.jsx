@@ -13,7 +13,7 @@ function Animation({text,color}) {
          setText((value) => value + text.charAt(index.current));
          index.current += 1;
          console.log(index.current);
-    },500);
+    },100);
   },[text,value,index]);
   return <p style={{color: color, borderBottom: `2px solid ${color}`, fontWeight: 'bold'}}>{value}</p>;
 };
