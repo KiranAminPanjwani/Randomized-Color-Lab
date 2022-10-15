@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaInfo } from "react-icons/fa";
 
+
 const Home = () => {
   const numberOfColors = 6;
   const defaultHexCodeArray = new Array(numberOfColors).fill("#7a7877");
