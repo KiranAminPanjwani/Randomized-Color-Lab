@@ -94,6 +94,7 @@ const Home = () => {
         </p>
       </div>
       <div id="container">
+        <div className="subContainer">
         <div className="row">
           {/* map is an array function which maps each value */}
           {hexcode.map((hex, i) => (
@@ -119,6 +120,7 @@ const Home = () => {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
       <ToastContainer autoClose={800} hideProgressBar={true} />
