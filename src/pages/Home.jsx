@@ -95,30 +95,35 @@ const Home = () => {
       </div>
       <div id="container">
         <div className="row">
-          {/* map is an array function which maps each value */}
-          {hexcode.map((hex, i) => (
+          {isWin ? 
+            (
+              <div className="row-child">
+                <div
+                  className="square"
+                  style={{ backgroundColor: `${endColor}` }}  >
+                  <span>
+                    <button
+                            className="btn"
+                            onClick={() => copyColorToClipboard(endColor)}
+                            style={{backgroundColor: `${endColor}`}}>
+                            Copy Color
+                      </button>
+                    </span>
+                </div>
+                </div>
+            )
+          : hexcode.map((hex, i) => (
             <div className="row-child" key={i}>
               <div
                 className="square"
                 style={{ backgroundColor: `${hex}` }}
                 onClick={() => checkColor(hex)}
               >
-                <span>
-                  {isWin && (
-                    <button
-                      className="btn"
-                      onClick={() => copyColorToClipboard(endColor)}
-                      style={{
-                        backgroundColor: isWin === true ? `${endColor}` : "",
-                      }}
-                    >
-                      Copy Color
-                    </button>
-                  )}
-                </span>
               </div>
             </div>
-          ))}
+          ))
+          
+          }
         </div>
       </div>
       <ToastContainer autoClose={800} hideProgressBar={true} />
