@@ -94,6 +94,7 @@ const Home = () => {
         </p>
       </div>
       <div id="container">
+        <div className="subContainer">
         <div className="row">
           {isWin ? 
             (
@@ -124,6 +125,7 @@ const Home = () => {
           ))
           
           }
+        </div>
         </div>
       </div>
       <ToastContainer autoClose={800} hideProgressBar={true} />

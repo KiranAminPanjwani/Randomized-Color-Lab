@@ -11,27 +11,20 @@ button {
   background-color: #252627;
   height: 60vh;
 }
-#container {
+
+.subContainer{
   display: flex;
-  height: 100%;
-  flex-direction: column;
   justify-content: center;
-  max-width: 800px;
-  margin: auto;
+  align-items: center;
 }
 
-.row {
+.row{
   display: flex;
-  flex-direction: row;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2px;
-}
-.row-child {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
+  margin: 40px 0;
+  max-width: 500px;
 }
 
 #headline {
