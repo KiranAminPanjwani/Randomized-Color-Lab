@@ -58,14 +58,12 @@ button {
   cursor: pointer;
 }
 
-/* Laptop screen sizes and above */
-@media (min-width: 769px) {
-  .square:hover {
-    box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
-      inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
-      inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
+/* Laptop screen sizes    box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
+        box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
+        inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
+        inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
+    }
   }
-}
 
 /* Mobile screen sizes ranging from 530px width and below*/
 @media (max-width: 530px) {
@@ -319,12 +317,10 @@ h1 {
 }
 
 .footer {
-  /* margin-top: 0.5rem; */
-  /* padding: 1rem; */
   background-color: rgb(50, 54, 61);
   position: fixed;
   text-align: center;
-  color: rgb(85, 85, 85);
+  color: rgb(126, 124, 124);
   bottom: 0;
   left: 0;
   width: 100%;
