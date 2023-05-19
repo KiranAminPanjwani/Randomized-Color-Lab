@@ -4,7 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaInfo } from "react-icons/fa";
 
-
 const Home = () => {
   const numberOfColors = 6;
   const defaultHexCodeArray = new Array(numberOfColors).fill("#7a7877");
@@ -60,6 +59,7 @@ const Home = () => {
 
   const copyColorToClipboard = (endColor) => {
     navigator.clipboard.writeText(endColor);
+    toast("Color copied");
   };
 
   return (
@@ -95,35 +95,34 @@ const Home = () => {
       </div>
       <div id="container">
         <div className="row">
-          {isWin ? 
-            (
-              <div className="row-child">
-                <div
-                  className="square"
-                  style={{ backgroundColor: `${endColor}` }}  >
-                  <span>
-                    <button
-                            className="btn"
-                            onClick={() => copyColorToClipboard(endColor)}
-                            style={{backgroundColor: `${endColor}`}}>
-                            Copy Color
-                      </button>
-                    </span>
-                </div>
-                </div>
-            )
-          : hexcode.map((hex, i) => (
-            <div className="row-child" key={i}>
+          {isWin ? (
+            <div className="row-child">
               <div
                 className="square"
-                style={{ backgroundColor: `${hex}` }}
-                onClick={() => checkColor(hex)}
+                style={{ backgroundColor: `${endColor}` }}
               >
+                <span>
+                  <button
+                    className="btn"
+                    onClick={() => copyColorToClipboard(endColor)}
+                    style={{ backgroundColor: `${endColor}` }}
+                  >
+                    Copy Color
+                  </button>
+                </span>
               </div>
             </div>
-          ))
-          
-          }
+          ) : (
+            hexcode.map((hex, i) => (
+              <div className="row-child" key={i}>
+                <div
+                  className="square"
+                  style={{ backgroundColor: `${hex}` }}
+                  onClick={() => checkColor(hex)}
+                ></div>
+              </div>
+            ))
+          )}
         </div>
       </div>
       <ToastContainer autoClose={800} hideProgressBar={true} />

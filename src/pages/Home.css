@@ -319,10 +319,12 @@ h1 {
 }
 
 .footer {
+  /* margin-top: 0.5rem; */
+  /* padding: 1rem; */
   background-color: rgb(50, 54, 61);
   position: fixed;
   text-align: center;
-  color: rgb(116, 116, 116);
+  color: rgb(85, 85, 85);
   bottom: 0;
   left: 0;
   width: 100%;
