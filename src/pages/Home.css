@@ -58,10 +58,8 @@ button {
   cursor: pointer;
 }
 
-/* Laptop screen sizes and above */
-@media (min-width: 769px) {
-  .square:hover {
-      box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
+/* Laptop screen sizes    box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
+        box-shadow: 0 8px 15px -8px rgba(255, 255, 255, 0.5),
         inset 0 0 5px 5px rgba(255, 255, 255, 0.5),
         inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
     }
@@ -69,7 +67,6 @@ button {
 
 /* Mobile screen sizes ranging from 530px width and below*/
 @media (max-width: 530px) {
-  
   .square {
     width: 140px;
     height: 140px;
@@ -84,19 +81,19 @@ button {
     flex-direction: column !important;
     background-position: center;
     transition: background 0.2s;
-
   }
 
-    .square:hover {
-        background: var(--focus-color) radial-gradient(circle, transparent 1%, var(--focus-color) 1%) center/15000%;
-        
-      }
-      
-      .square:active {
-        background-color: var(--active-color);
-        background-size: 100%;
-        transition: background 0s;
-      }
+  .square:hover {
+    background: var(--focus-color)
+      radial-gradient(circle, transparent 1%, var(--focus-color) 1%)
+      center/15000%;
+  }
+
+  .square:active {
+    background-color: var(--active-color);
+    background-size: 100%;
+    transition: background 0s;
+  }
 
   .square p {
     font-size: 50%;
@@ -320,12 +317,10 @@ h1 {
 }
 
 .footer {
-  /* margin-top: 0.5rem; */
-  /* padding: 1rem; */
   background-color: rgb(50, 54, 61);
   position: fixed;
   text-align: center;
-  color: rgb(85, 85, 85);
+  color: rgb(126, 124, 124);
   bottom: 0;
   left: 0;
   width: 100%;
